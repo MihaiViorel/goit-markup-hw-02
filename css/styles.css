@@ -1,0 +1,162 @@
+:root {
+  --active-link: #2196F3;
+  --brand-color: #2196F3;
+  --inactive-link1: #212121;
+  --inactive-link2: #757575;
+}
+
+body {
+  font-family:'Roboto', sans-serif;
+}
+
+/* ----------------------------------- Header -----------------------------------*/
+
+/* Header Logo */
+.logo-link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  font-style: bold;
+}
+
+.logo-web {
+  color: var(--brand-color);
+}
+
+.logo-studio {
+  color: #000;
+}
+
+/* Header Navigation */
+.global-header .main-navigation ul{
+  list-style: none;
+}
+
+.global-header .main-navigation {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--inactive-link1);
+}
+
+.global-header .main-navigation a {
+  text-decoration: none;
+}
+
+.global-header .main-navigation a:active,
+.global-header .main-navigation a:hover,
+.global-header .main-navigation a:focus,
+.global-header .main-navigation a:visited:active,
+.global-header .main-navigation a:visited:hover,
+.global-header .main-navigation a:visited:focus {
+  color: var(--active-link);
+}
+
+.global-header .main-navigation a:visited {
+  color: var(--inactive-link1);
+}
+
+/* Header Contact */
+.global-header-contact {
+  list-style: none;
+}
+
+.global-header-contact a[ href^="mailto"],
+.global-header-contact a[ href^="tel"] {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--inactive-link2);
+}
+
+.global-header-contact a {
+  text-decoration: none;
+}
+
+.global-header-contact a:active,
+.global-header-contact a:hover,
+.global-header-contact a:focus,
+.global-header-contact a:visited:active,
+.global-header-contact a:visited:hover,
+.global-header-contact a:visited:focus {
+  color: var(--active-link);
+}
+
+.global-header-contact a:visited {
+  color: var(--inactive-link2);
+}
+
+/* ----------------------------------- Studio - Main -----------------------------------*/
+
+
+
+/* ----------------------------------- Portofolio - Main -----------------------------------*/
+
+
+
+/* ----------------------------------- Footer -----------------------------------*/
+.global-footer {
+  background-color: #2F303A;
+}
+
+/* Footer Logo */
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  font-style: bold;
+}
+
+.logo-web-footer {
+  color: var(--brand-color);
+}
+
+.logo-studio-footer {
+  color: #fff;
+}
+
+/* Footer Contact */
+.global-footer-contact {
+  list-style: none;
+}
+
+.global-footer-contact span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  color: #fff;
+  }
+
+.global-footer-contact a[ href^="mailto"],
+.global-footer-contact a[ href^="tel"] {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(100%,100%,100%,60%);
+}
+
+.global-footer-contact a {
+  text-decoration: none;
+}
+
+.global-footer-contact a:active,
+.global-footer-contact a:hover,
+.global-footer-contact a:focus,
+.global-footer-contact a:visited:active,
+.global-footer-contact a:visited:hover,
+.global-footer-contact a:visited:focus {
+  color: var(--active-link);
+}
+
+.global-footer-contact a:visited {
+  color: var(--inactive-link2);
+}
