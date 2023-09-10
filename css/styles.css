@@ -49,7 +49,7 @@ body {
   list-style: none;
 }
 
-.global-header .main-navigation {
+.global-header .main-navigation a{
   font-weight: 500;
   font-size: 14px;
   color: var(--inactive-link1);
