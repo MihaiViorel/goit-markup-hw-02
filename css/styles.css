@@ -1,12 +1,24 @@
 :root {
+  --bg-text-color: rgba(33, 33, 33, 1);
   --active-link: #2196F3;
   --brand-color: #2196F3;
   --inactive-link1: #212121;
   --inactive-link2: #757575;
+  --black: #000;
+  --white: rgba(255, 255, 255, 1);
+  --hero-bg: rgba(47, 48, 58, 1);
+  --list-title1: rgba(33, 33, 33, 1);
+  --list-elements1: rgba(117, 117, 117, 1);
+  --footer-bg:#2F303A;
+  --global-footer-contact: rgba(100%, 100%, 100%, 60%);
+  --our-team-bg: rgba(245, 244, 250, 1);
+  --hero-button-hover: rgba(24, 140, 232, 1);
+  --hero-button-focus: rgba(33, 150, 243, 1);
 }
 
 body {
   font-family:'Roboto', sans-serif;
+  color: var(--bg-text-color);
 }
 
 /* ----------------------------------- Header -----------------------------------*/
@@ -28,16 +40,16 @@ body {
 }
 
 .logo-studio {
-  color: #000;
+  color: var(--black);
 }
 
 /* Header Navigation */
+/* List and Text Styling */
 .global-header .main-navigation ul{
   list-style: none;
 }
 
 .global-header .main-navigation {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: var(--inactive-link1);
@@ -47,16 +59,48 @@ body {
   text-decoration: none;
 }
 
-.global-header .main-navigation a:active,
-.global-header .main-navigation a:hover,
-.global-header .main-navigation a:focus,
-.global-header .main-navigation a:visited:active,
-.global-header .main-navigation a:visited:hover,
-.global-header .main-navigation a:visited:focus {
+/* Link Behaviour */
+/* :current(.main-navigation-studio) */
+#current {
   color: var(--active-link);
 }
 
-.global-header .main-navigation a:visited {
+.main-navigation-studio:active,
+.main-navigation-studio:hover,
+.main-navigation-studio:focus,
+.main-navigation-studio:visited:active,
+.main-navigation-studio:visited:hover,
+.main-navigation-studio:visited:focus {
+  color: var(--active-link);
+}
+
+.main-navigation-studio:visited {
+  color: var(--inactive-link1);
+}
+
+.main-navigation-portofolio:active,
+.main-navigation-portofolio:hover,
+.main-navigation-portofolio:focus,
+.main-navigation-portofolio:visited:active,
+.main-navigation-portofolio:visited:hover,
+.main-navigation-portofolio:visited:focus {
+  color: var(--active-link);
+}
+
+.main-navigation-portofolio:visited {
+  color: var(--inactive-link1);
+}
+
+.main-navigation-contacts:active,
+.main-navigation-contacts:hover,
+.main-navigation-contacts:focus,
+.main-navigation-contacts:visited:active,
+.main-navigation-contacts:visited:hover,
+.main-navigation-contacts:visited:focus {
+  color: var(--active-link);
+}
+
+.main-navigation-contacts:visited {
   color: var(--inactive-link1);
 }
 
@@ -67,7 +111,6 @@ body {
 
 .global-header-contact a[ href^="mailto"],
 .global-header-contact a[ href^="tel"] {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: var(--inactive-link2);
@@ -91,16 +134,203 @@ body {
 }
 
 /* ----------------------------------- Studio - Main -----------------------------------*/
+/* Hero Section */
+.main-hero {
+  background-color: var(--hero-bg);
+}
+
+.main-hero-title{
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 6%;
+  text-align: center;
+  color: var(--white);
+}
+
+.main-hero-button {
+  width: 200px;
+  height: 50px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 6%;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--hero-button-focus);
+  border: none;
+  cursor: pointer;
+}
+
+.main-hero-button:hover {
+  background-color: var(--hero-button-hover);
+}
 
 
+/* Our Advantages */
+.main-our_advantages {
+  list-style: none;
+}
+
+.main-our_advantages-list_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  letter-spacing: 3%;
+  color: var(--list-title1);
+}
+
+.main-our_advantages-list_element {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: var(--list-elements1);
+}
+
+/* What we do Section */
+.main-what_we_do {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42.19px;
+  letter-spacing: 3%;
+  text-align: center;
+  color: var(--list-title1);
+}
+
+.main-what_we_do-list {
+  list-style: none;
+}
+
+/* Our Team Section */
+.main-our_team-background {
+  background-color: var(--our-team-bg);
+}
+
+.main-our_team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42.19px;
+  letter-spacing: 3%;
+  text-align: center;
+  color: var(--list-title1);
+}
+
+.main-our_team-list {
+  list-style: none;
+}
+
+.main-our_team-list-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 3%;
+  text-align: center;
+  color: var(--list-title1);
+}
+
+.main-our_team-list-description {
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 3%;
+  text-align: center;
+  color: var(--list-elements1);
+}
 
 /* ----------------------------------- Portofolio - Main -----------------------------------*/
 
+/* Button List */
+.main-button_list {
+  list-style: none;
+  }
 
+.main-button_list-all {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 3%;
+  color: var(--list-title1);
+  border: none;
+  cursor: pointer;
+}
+
+.main-button_list-websites {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 3%;
+  color: var(--list-title1);
+  border: none;
+  cursor: pointer;
+}
+
+.main-button_list-apps {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 3%;
+  color: var(--list-title1);
+  border: none;
+  cursor: pointer;
+}
+
+.main-button_list-design {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 3%;
+  color: var(--list-title1);
+  border: none;
+  cursor: pointer;
+}
+
+.main-button_list-marketing {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 3%;
+  color: var(--list-title1);
+  border: none;
+  cursor: pointer;
+}
+
+.main-button_list-all:hover,
+.main-button_list-websites:hover,
+.main-button_list-apps:hover,
+.main-button_list-design:hover,
+.main-button_list-marketing:hover {
+  color: var(--white);
+  background-color: var(--brand-color);
+}
+
+/* Product List */
+.main-product_list {
+  list-style: none;
+}
+
+.main-product_list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 6%;
+  color: var(--list-title1);
+}
+
+.main-product_list-description {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 3%;
+  color: var(--list-elements1);
+}
 
 /* ----------------------------------- Footer -----------------------------------*/
 .global-footer {
-  background-color: #2F303A;
+  background-color: var(--footer-bg);
 }
 
 /* Footer Logo */
@@ -120,7 +350,7 @@ body {
 }
 
 .logo-studio-footer {
-  color: #fff;
+  color: var(--white);
 }
 
 /* Footer Contact */
@@ -129,19 +359,15 @@ body {
 }
 
 .global-footer-contact span {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  font-style: normal;
-  color: #fff;
+  color: var(--white);
   }
 
 .global-footer-contact a[ href^="mailto"],
 .global-footer-contact a[ href^="tel"] {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: 14px;
-  color: rgba(100%,100%,100%,60%);
+  color: var(--global-footer-contact);
 }
 
 .global-footer-contact a {
