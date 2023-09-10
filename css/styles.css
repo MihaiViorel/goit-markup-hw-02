@@ -60,7 +60,6 @@ body {
 }
 
 /* Link Behaviour */
-/* :current(.main-navigation-studio) */
 #current {
   color: var(--active-link);
 }
