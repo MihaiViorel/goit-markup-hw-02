@@ -60,47 +60,17 @@ body {
 }
 
 /* Link Behaviour */
-#current {
+.current {
   color: var(--active-link);
 }
 
-.main-navigation-studio:active,
-.main-navigation-studio:hover,
-.main-navigation-studio:focus,
-.main-navigation-studio:visited:active,
-.main-navigation-studio:visited:hover,
-.main-navigation-studio:visited:focus {
+.global-header-nav a:active,
+.global-header-nav a:hover,
+.global-header-nav a:focus,
+.global-header-nav a:visited:active,
+.global-header-nav a:visited:hover,
+.global-header-nav a:visited:focus {
   color: var(--active-link);
-}
-
-.main-navigation-studio:visited {
-  color: var(--inactive-link1);
-}
-
-.main-navigation-portofolio:active,
-.main-navigation-portofolio:hover,
-.main-navigation-portofolio:focus,
-.main-navigation-portofolio:visited:active,
-.main-navigation-portofolio:visited:hover,
-.main-navigation-portofolio:visited:focus {
-  color: var(--active-link);
-}
-
-.main-navigation-portofolio:visited {
-  color: var(--inactive-link1);
-}
-
-.main-navigation-contacts:active,
-.main-navigation-contacts:hover,
-.main-navigation-contacts:focus,
-.main-navigation-contacts:visited:active,
-.main-navigation-contacts:visited:hover,
-.main-navigation-contacts:visited:focus {
-  color: var(--active-link);
-}
-
-.main-navigation-contacts:visited {
-  color: var(--inactive-link1);
 }
 
 /* Header Contact */
