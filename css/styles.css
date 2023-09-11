@@ -219,7 +219,7 @@ body {
   list-style: none;
   }
 
-.main-button_list-all {
+.main-button_list button{
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -230,55 +230,9 @@ body {
   cursor: pointer;
 }
 
-.main-button_list-websites {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 3%;
-  color: var(--list-title1);
-  border: none;
-  cursor: pointer;
-}
-
-.main-button_list-apps {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 3%;
-  color: var(--list-title1);
-  border: none;
-  cursor: pointer;
-}
-
-.main-button_list-design {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 3%;
-  color: var(--list-title1);
-  border: none;
-  cursor: pointer;
-}
-
-.main-button_list-marketing {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 3%;
-  color: var(--list-title1);
-  border: none;
-  cursor: pointer;
-}
-
-.main-button_list-all:hover,
-.main-button_list-websites:hover,
-.main-button_list-apps:hover,
-.main-button_list-design:hover,
-.main-button_list-marketing:hover {
+.main-button_list button:hover,
+.main-button_list button:active,
+.main-button_list button:focus {
   color: var(--white);
   background-color: var(--brand-color);
 }
